@@ -1,0 +1,13 @@
+version: "3.7"
+
+services:
+  mariadb:
+    container_name: mariadb_server
+    image: mariadb:10.7
+    ports:
+      - 3300:3306
+    environment:
+      - MARIADB_DATABASE=spring_react
+      - MARIADB_ROOT_PASSWORD=spring_react_app111
+      - MARIADB_USER=codelamps
+      - MARIADB_PASSWORD=spring_react_app123
