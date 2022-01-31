@@ -1,13 +1,13 @@
-version: "3.7"
+version: "3.6"
 
 services:
-  mariadb:
-    container_name: mariadb_server
-    image: mariadb:10.7
+  mysql:
+    container_name: mysql
+    image: mysql:8.0
     ports:
       - 3300:3306
     environment:
-      - MARIADB_DATABASE=spring_react
-      - MARIADB_ROOT_PASSWORD=spring_react_app111
-      - MARIADB_USER=codelamps
-      - MARIADB_PASSWORD=spring_react_app123
+      - MYSQL_DATABASE=ebook_chat_app
+      - MYSQL_ROOT_PASSWORD=chat_app123
+      - MYSQL_USER=chat_app
+      - MYSQL_PASSWORD=chat_app1123
